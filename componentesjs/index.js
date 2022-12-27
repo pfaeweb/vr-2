@@ -15,3 +15,19 @@ AFRAME.registerComponent("setdisplay", {
             })
     }
 })
+
+AFRAME.registerComponent('site-change', {
+    schema: {
+      img: {type: 'string',}
+    },
+
+    init: function(){
+      var data= this.data
+      var el= this.el
+
+      el.addEventListener('mouseenter', function(){
+        var mySky= document.querySelector("#my-sky");
+        mySky.setAttribute("src", data.img)
+      })
+    }
+  });

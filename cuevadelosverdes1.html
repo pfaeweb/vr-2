@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="componentesjs/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="cuevaverde" src="assets/escenas/cuevaverde.jpg" alt="cueva de los verdes">
+            <img id="cartel" src="assets/imagenes/cartel.jpg" alt="cartel cueva de los verdes">
+         </a-assets>
+
+         <a-sky src="#cuevaverde" id="my-sky"></a-sky>
+
+         <a-plane color="white" width="1" height="0.20" position="0 2 -1">
+             <a-text value="Busca el cartel" align="center" color="black" width="2"></a-text>
+         </a-plane>
+ 
+         <a-plane width="95" height="95" position="197.45348 -42.58555 179.15504" rotation="0.00 -137.11 0.00" src="#cartel" scale="0.57 0.55826 1" class="click" mylink="href: "></a-plane>
+ 
+         <a-camera>
+             <a-cursor raycaster="object: .click"></a-cursor>
+         </a-camera>
+    </a-scene>
+</body>
+</html>
