@@ -11,8 +11,8 @@
 <body>
     <a-scene>
         <a-assets>
-            <img id="muelle" src="assets/escenas/ElHierro/restinga.jpg" alt="volcan de teneguia">
-            <img id="" src="" alt="">
+            <img id="muelle" src="assets/escenas/ElHierro/restinga.jpg" alt="muelle de la restinga">
+            <img id="restinga" src="assets/imagenes/El Hierro/restinga.jpg" alt="muelle visto desde arriba">
          </a-assets>
 
          <a-sky src="#muelle" id="my-sky"></a-sky>
@@ -26,7 +26,7 @@
             (Para cerrar la ventana de ayuda, mira la 'X')" text="width: 1; align: center; color: black;"></a-text>
         </a-plane>
 
-        <a-plane width="95" height="95" position="197.45348 -42.58555 179.15504" rotation="0.00 -137.11 0.00" src="" scale="0.57 0.55826 1" class="click" mylink="href: "></a-plane>
+        <a-plane width="95" height="95" position="197.45348 -42.58555 179.15504" rotation="0.00 -137.11 0.00" src="#restinga" scale="0.57 0.55826 1" class="click" mylink="href: "></a-plane>
  
          <a-camera camera look-controls>
              <a-cursor raycaster="object: .click"></a-cursor>
