@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="componentesjs/index.js"></script>
+    <title>Museo del Campesino | VR PFAE Tías</title>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="escena" src="assets/escenas/Lanzarote/monumento-campesino.jpg" alt="Monumento al campesino">
+        </a-assets>
+
+        <a-sky src="#escena" id="my-sky"></a-sky>
+
+         <a-plane position="0 3 -8" rotation="10 0 0" color="#949494" height="8" width="12">
+            <a-text value=" La Casa-Museo del Campesino, es la obra con la que Cesar Manrique reconoce el esfuerzo de los campesinos de  Lanzarote, que se enfrentaron a las condiciones mas adversas para dar vida al territorio. Es un recorrido por la Arquitectura, Agricultura, Artesania y Gastronomia tradicional, que se completa con el Monumento a la Fecundidad, una obra vanguardista en la que Cesar Manrique quiso rendir su particular homenaje.
+            
+            
+                (Para cerrar la ventana de ayuda, mira la 'X')"
+                text="width: 10.01; align: center; color: #000000; letterSpacing: 3; lineHeight: 50"></a-text>
+            <a-text value="X" text="width: 10; color: #000;" position="5.199 2.934 0.061" setdisplay
+                class="click"></a-text>
+        </a-plane>
+
+        <a-image src="#diamante-png" opacity="0.1" position="0 3 -7" rotation="10 0 0" width="1" height="1" material="alphaTest: 0.5"></a-image>
+ 
+        <a-plane width="95" height="95" position="197.45348 -42.58555 179.15504" rotation="0.00 -137.11 0.00" src="#cartel" scale="0.57 0.55826 1" class="click" mylink="href: "></a-plane>
+ 
+        <a-entity camera look-controls>
+            <a-cursor raycaster="objects: .click"></a-cursor>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
