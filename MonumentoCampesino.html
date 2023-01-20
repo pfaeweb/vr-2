@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="componentesjs/index.js"></script>
-    <title>VR-2 | Mirador del Rio</title>
+    <title>VR-2 | Monumento al campesino</title>
 </head>
+
 <body>
     <a-scene>
         <a-assets>
-            <img id="fondo" src="assets/escenas/Lanzarote/elMiradorDelRio.jpg" alt="fondo">
+            <img id="fondo" src="assets/escenas/Lanzarote/monumento-campesino.jpg" alt="fondo">
             <img id="museoAtlantico" src="" alt="">
-         </a-assets>
-         
-         <a-sky src="#fondo"></a-sky>
+        </a-assets>
+
+        <a-sky src="#fondo"></a-sky>
 
 
-         <a-plane position="0 5 -8" rotation="10 0 0" color="#949494" height="7" width="12">
-            <a-text value=" 
+        <a-plane position="0 5 -8" rotation="10 0 0" color="#949494" height="7" width="12">
+            <a-text value=" También llamado Monumento a la fecundidad, esta escultura se levanta en 1969 como símbolo de la fecundidad de las tierras rurales de Lanzarote y homenajea al labrador y deja patente el aprecio que César Manrique tenía por los agricultores.
             
             
                 (Para cerrar la ventana de ayuda, mira la 'X')"
@@ -31,14 +33,16 @@
         <a-image src="#diamante-png" opacity="0.1" position="0 3 -7" rotation="10 0 0" width="1" height="1"
             material="alphaTest: 0.5"></a-image>
 
-             
-            
-             <a-plane width="95" height="95" position="197.45348 -42.58555 179.15504" rotation="0.00 -137.11 0.00" src="#cartel" scale="0.57 0.55826 1" class="click" mylink="href: "></a-plane>
- 
 
-             <a-entity camera look-controls>
-                 <a-cursor raycaster="objects: .click"></a-cursor>
-             </a-entity>
+
+        <a-plane width="95" height="95" position="197.45348 -42.58555 179.15504" rotation="0.00 -137.11 0.00"
+            src="#cartel" scale="0.57 0.55826 1" class="click" mylink="href: "></a-plane>
+
+
+        <a-entity camera look-controls>
+            <a-cursor raycaster="objects: .click"></a-cursor>
+        </a-entity>
     </a-scene>
 </body>
+
 </html>
